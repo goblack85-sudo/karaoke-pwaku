@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>KaraokeMic</title>
+<link rel="stylesheet" href="style.css">
+<script src="https://www.youtube.com/iframe_api"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/15.7.0/nouislider.min.js"></script>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/15.7.0/nouislider.min.css" rel="stylesheet">
+</head>
+<body>
+
+<div id="container">
+
+  <!-- KIRI: Video + Mixer -->
+  <div id="left">
+    <div id="video-box">
+      <div id="ytplayer"></div>
+    </div>
+
+    <div id="mixer-box">
+      <div id="mixer">
+        <div class="channel">
+          <div class="label-box">Gain</div>
+          <div id="gain-slider"></div>
+        </div>
+        <div class="channel">
+          <div class="label-box">Comp</div>
+          <div id="comp-slider"></div>
+        </div>
+        <div class="channel">
+          <div class="label-box">Attack</div>
+          <div id="attack-slider"></div>
+        </div>
+        <div class="channel">
+          <div class="label-box">Release</div>
+          <div id="release-slider"></div>
+        </div>
+        <div class="channel">
+          <div class="label-box">Echo</div>
+          <div id="echo-slider"></div>
+        </div>
+        <div class="channel">
+          <div class="label-box">Master</div>
+          <div id="master-slider"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- KANAN: Volume -->
+  <div id="volume-box">
+    <div class="vol-control">
+      <div class="label-box">Volume Mic</div>
+      <div id="vol-mic-slider"></div>
+    </div>
+    <div class="vol-control">
+      <div class="label-box">Volume YouTube</div>
+      <div id="vol-yt-slider"></div>
+    </div>
+  </div>
+
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
